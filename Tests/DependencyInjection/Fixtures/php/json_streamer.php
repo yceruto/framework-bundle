@@ -8,7 +8,7 @@ $container->loadFromExtension('framework', [
     'type_info' => [
         'enabled' => true,
     ],
-    'json_encoder' => [
+    'json_streamer' => [
         'enabled' => true,
     ],
 ]);

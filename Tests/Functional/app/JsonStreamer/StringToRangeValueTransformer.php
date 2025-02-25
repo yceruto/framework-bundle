@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Bundle\FrameworkBundle\Tests\Functional\app\JsonEncoder;
+namespace Symfony\Bundle\FrameworkBundle\Tests\Functional\app\JsonStreamer;
 
-use Symfony\Component\JsonEncoder\ValueTransformer\ValueTransformerInterface;
+use Symfony\Component\JsonStreamer\ValueTransformer\ValueTransformerInterface;
 use Symfony\Component\TypeInfo\Type;
 use Symfony\Component\TypeInfo\Type\BuiltinType;
 
@@ -25,7 +25,7 @@ class StringToRangeValueTransformer implements ValueTransformerInterface
         return array_map(static fn (string $v): int => (int) $v, explode('..', $value));
     }
 
-    public static function getJsonValueType(): BuiltinType
+    public static function getStreamValueType(): BuiltinType
     {
         return Type::string();
     }
