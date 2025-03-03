@@ -9,6 +9,6 @@
         <framework:annotations enabled="false" />
         <framework:php-errors log="true" />
         <framework:type-info enabled="true" />
-        <framework:json-encoder enabled="true" />
+        <framework:json-streamer enabled="true" />
     </framework:config>
 </container>
